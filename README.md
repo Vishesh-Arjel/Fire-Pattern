@@ -3,9 +3,9 @@ To make it run in other OS, remove the following code:
 ------------------------------------------------------
 HANDLE h = GetStdHandle(STD_OUTPUT_HANDLE);
 	CONSOLE_CURSOR_INFO c;
-	GetConsoleCursorInfo(h, &c);
-	c.bVisible = FALSE;
-	SetConsoleCursorInfo(h, &c);
+ 	GetConsoleCursorInfo(h, &c);
+  	c.bVisible = FALSE;
+   	SetConsoleCursorInfo(h, &c);
 ------------------------------------------------------
 Also remove the headerfile "windows.h"
 ------------------------------------------------------
